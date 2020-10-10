@@ -151,4 +151,46 @@ footer{
         text-align: left;
     }
 
+
+
+
+    /* #landing-square-box{
+        width: 90%;
+        height: 30%;
+    } */
+
+    .picture-rows{
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .picture-square{
+        width: 90%;
+        height: 30%;
+    }
+
+    #about-us{
+        background-color: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    #about-row{
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-card{
+        margin-top: 20;
+        background-color: white;
+    }
+
+    #about-intro, #about-description{
+        width: 50%;
+        margin-bottom: 20px;
+        color: white;
+    }
 }
