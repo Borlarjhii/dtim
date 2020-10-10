@@ -16,7 +16,7 @@ nav{
 }
 
 #nav-flex{
-    display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     overflow: hidden;
 
@@ -59,11 +59,11 @@ a.active{
 }
 
 #pictures-column{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
 } 
 .picture-rows{
-    display: flex;
+    display: -webkit-flex;
 }
 
 .picture-square{
@@ -86,7 +86,7 @@ img{
 }
 
 #about-row{
-    display: flex;
+    display: -webkit-flex;
     justify-content: center;
 }
 
@@ -136,7 +136,7 @@ footer{
 @media screen and (max-width: 600px){
     .topnav.responsive {
         position: relative;
-        display: flex;
+        display: -webkit-flex;
         flex-direction: column;
     }
     .topnav.responsive .icon{
