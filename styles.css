@@ -3,10 +3,13 @@ body{
     margin: 0;
 }
 
-/* Header */
+/* index.html */
+
+/* Header(for all the pages) */
 
 
 nav{
+    
     position: fixed;
     top: 0;
     left: 0;
@@ -40,18 +43,25 @@ a:hover{
     display: none;
 }
 
-a.active{
-    color: #b2b4b8 !important;
+.active{
+    color: #b2b4b8;
 }
 /* Main */
 
+/* Landing Page */
+
+#landing-page{
+    margin-top: 120px;
+}
+
 #landing-square-box{
     margin: 0 auto;
-    margin-top: 100px;
     width: 80%;
-    height: 80vh;
+    height: 70vh;
     background-color: black;
 }
+
+/* Pictures Section */
 
 #pictures{
     margin-top: 50px;
@@ -80,6 +90,7 @@ img{
     height: 100%;
 }
 
+/* About Us Section */
 
 #about-us{
     margin-bottom: 50px;
@@ -111,6 +122,8 @@ img{
     margin-top: 50px;
 }
 
+/* Footer */
+
 footer{
     position: relative;
     left: 0;
@@ -120,6 +133,48 @@ footer{
     padding: 80px;
 }
 
+
+/* Photography.html */
+
+/* Main */
+
+main{
+    margin-top: 120px;
+}
+
+#images{
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+.img-row{
+    display: -webkit-flex;
+
+}
+
+.img-cover{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Media Query For index.html */
+
+/* Navbar(for all the pages)*/
 
 @media screen and (max-width: 600px){
     .topnav a:not(:first-child){
@@ -151,13 +206,10 @@ footer{
         text-align: left;
     }
 
+}
 
 
-
-    /* #landing-square-box{
-        width: 90%;
-        height: 30%;
-    } */
+@media screen and (max-width: 600px){
 
     .picture-rows{
         display: -webkit-flex;
@@ -192,5 +244,14 @@ footer{
         width: 50%;
         margin-bottom: 20px;
         color: white;
+    }
+}
+
+/* Photography.html */
+@media screen and (max-width: 600px){
+    .img-row{
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

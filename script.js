@@ -1,5 +1,6 @@
 var navFlex = document.querySelector('#nav-flex')
 
+// Navigation Bar
 
 navFlex.addEventListener('click', myFunction)
 
