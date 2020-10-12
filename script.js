@@ -1,10 +1,14 @@
 var navFlex = document.querySelector('#nav-flex')
 
+var modalClose = document.querySelector('#modal-close')
+var img01 = document.querySelector('.img01')
+
+
 // Navigation Bar
 
-navFlex.addEventListener('click', myFunction)
+navFlex.addEventListener('click', navBar)
 
-function myFunction(){
+function navBar(){
     if (navFlex.className === "topnav"){
         navFlex.className += " responsive";
     } else{
@@ -13,3 +17,21 @@ function myFunction(){
 
     console.log(navFlex.className)
 }
+
+// modal image/ \Pop-up Box Images
+
+
+modalClose.addEventListener('click', modalCloseFunction)
+function modalCloseFunction(){
+    modalClose.style.display = "none"
+}
+
+
+document.querySelectorAll('.modal-img').forEach(modalImg => 
+    modalImg.addEventListener('click', modalFunction => {
+        img01.src = modalImg.src;
+        modalClose.style.display = 'block'
+    })
+);
+
+
