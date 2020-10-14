@@ -33,6 +33,7 @@ nav{
 a{
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 a:hover{
@@ -52,6 +53,8 @@ a:hover{
 
 #landing-page{
     margin-top: 110px;
+    width: 100%;
+    height: 100vh;
 }
 
 #landing-square-box{
@@ -64,8 +67,7 @@ a:hover{
 /* Pictures Section */
 
 #pictures{
-    margin-top: 50px;
-    margin-bottom: 50px
+    height: 100vh;
 }
 
 #pictures-column{
@@ -93,7 +95,8 @@ img{
 /* About Us Section */
 
 #about-us{
-    margin-bottom: 50px;
+    height: 100vh;
+    padding: 60px;
 }
 
 #about-row{
@@ -237,6 +240,10 @@ img{
 }
 
 
+/* Lazy Loading and Progressive Image Loader */
+/* Progressive Image Loader */
+
+
 
 /* MEDIA QUERIES */
 
@@ -244,19 +251,19 @@ img{
 
 /* Navbar(for all the pages)*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 911px){
     .topnav a:not(:first-child){
         display: none;
     }
 
     .topnav a.icon{
         float: right;
-        display: block;
+        display: inline;
     }
     
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 911px){
     .topnav.responsive {
         position: relative;
         display: -webkit-flex;
@@ -270,7 +277,7 @@ img{
 
     .topnav.responsive a{
         float: none;
-        display: block;
+        display: inline;
         text-align: left;
     }
 

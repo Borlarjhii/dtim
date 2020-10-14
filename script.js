@@ -35,3 +35,7 @@ document.querySelectorAll('.modal-img').forEach(modalImg =>
 );
 
 
+// Lazy Loading
+const el = document.querySelector('.lozad')
+const observer = lozad(el);
+obsevrver.observe();
