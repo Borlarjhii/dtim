@@ -8,6 +8,9 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+        Plyr CSS
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
     </head>
     <body>
         <header>
@@ -30,12 +33,21 @@
         </header>
 
         <main>
-            <section id="landing-page">
-                <div>
-                    <div id="landing-square-box">
+            <section id="landing-page-video">
+                <div id="index-video">
+                    <video id="player" controls crossorigin playsinline data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576.mp4" type="video/mp4" size="576">
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720.mp4" type="video/mp4" size="720">
+                        <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080.mp4" type="video/mp4" size="1080">
 
-                    </div>
+                        <!-- Captions -->
+
+                        <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
+                        <track kind="captions" label="French" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" default>
+                    </video>
+
                 </div>
+                
 
             </section>
 
@@ -113,6 +125,7 @@
 
     </body>
     <script src="script.js"></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.polyfilled.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> -->
 
 

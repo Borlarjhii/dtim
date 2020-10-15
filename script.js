@@ -18,6 +18,11 @@ function navBar(){
     console.log(navFlex.className)
 }
 
+
+const player = new player('video', {captions: {active: true}});
+
+window.player = player
+
 // modal image/ \Pop-up Box Images
 
 

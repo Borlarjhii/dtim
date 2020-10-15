@@ -52,17 +52,15 @@ a:hover{
 
 /* Landing Page */
 
-#landing-page{
+#landing-page-video{
     margin-top: 110px;
     width: 100%;
     margin-bottom: 40px;
 }
 
-#landing-square-box{
+#index-video{
     margin: 0 auto;
     width: 80%;
-    height: 70vh;
-    background-color: black;
 }
 
 /* Pictures Section */
