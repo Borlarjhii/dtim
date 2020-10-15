@@ -34,8 +34,18 @@ document.querySelectorAll('.modal-img').forEach(modalImg =>
     })
 );
 
+// WILL WORK ON IT LATER
 
 // Lazy Loading
-const el = document.querySelector('.lozad')
-const observer = lozad(el);
-obsevrver.observe();
+// const el = document.querySelector('.lozad')
+// const observer = lozad(el);
+// obsevrver.observe();
+
+// lozad('.lozad', {
+//     load: function(el){
+//         el.src = el.dataset.src;
+//         el.onload = function(){
+//             el.classList.add('fade')
+//         }
+//     }
+// }).observe()
