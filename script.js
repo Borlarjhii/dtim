@@ -1,3 +1,5 @@
+
+
 var navFlex = document.querySelector('#nav-flex')
 
 var modalClose = document.querySelector('#modal-close')
@@ -19,9 +21,7 @@ function navBar(){
 }
 
 
-const player = new player('video', {captions: {active: true}});
 
-window.player = player
 
 // modal image/ \Pop-up Box Images
 

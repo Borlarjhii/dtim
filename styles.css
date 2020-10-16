@@ -59,8 +59,12 @@ a:hover{
 }
 
 #index-video{
-    margin: 0 auto;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+video{
+    max-width: 60%;
 }
 
 /* Pictures Section */
@@ -292,6 +296,9 @@ main{
 
 
 @media screen and (max-width: 600px){
+    video{
+        max-width: 90%;
+    }
 
     .picture-rows{
         display: -webkit-flex;
