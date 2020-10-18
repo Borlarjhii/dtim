@@ -98,7 +98,9 @@ img{
 
 #about-us{
     padding: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    background-color: black;
+    color: white;
 }
 
 #about-row{
@@ -116,7 +118,7 @@ img{
 #about-card{
     width: 300px;
     height: 400px;
-    background-color: black;
+    background-color: white;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -239,6 +241,43 @@ main{
 }
 
 
+/* Videos.html */
+#vid-blog{
+    
+}
+
+#vid-blog div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+
+#vid-blog div video{
+    width: 60%;
+}
+
+#vid-blog div p{
+    width: 50%;
+
+}
+
+.bl-cl{
+    background-color: black;
+    color: white;
+}
+
+.or-cl{
+    background-color: orangered;
+    color: white;
+}
+
+.yel-col{
+    background-color: yellow;
+
+}
+
 /* Lazy Loading and Progressive Image Loader */
 /* Progressive Image Loader */
 
@@ -348,5 +387,16 @@ main{
         width: 100%;
         height: 100vh;
         border: 1px solid white;
+    }
+
+    /* TO HIDE STUFFS */
+    .hide-display{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #vid-blog div video{
+        width: 90%;
     }
 }
