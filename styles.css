@@ -263,6 +263,8 @@ main{
 
 }
 
+/* Background color for the videos */
+
 .bl-cl{
     background-color: black;
     color: white;
@@ -398,5 +400,10 @@ main{
 @media screen and (max-width: 600px){
     #vid-blog div video{
         width: 90%;
+    }
+
+    #vid-blog div p{
+        width: 70%;
+    
     }
 }
