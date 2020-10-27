@@ -1,43 +1,59 @@
 body{
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    background-color: yellow;
+    padding: 0;
+    background-color: white;
 }
 
 /* index.html */
 
 /* Header(for all the pages) */
 
+header{
+    z-index: 1;
+    max-width: 100%;
+    padding: 10px;
+    background-color: darkgreen;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    color: white;
+    height: 50px;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    text-decoration: none;
+}
 
 nav{
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 30px;
-    background-color: darkgreen;
+    float: right;
 }
 
-#nav-flex{
-    display: -webkit-flex;
-    justify-content: space-between;
-    overflow: hidden;
-
+.clearfix{
+    clear: both;
 }
 
-
-.nav-item{
-    padding: 10px;
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-a{
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
     text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-a:hover{
     color: white;
 }
 
@@ -45,8 +61,16 @@ a:hover{
     display: none;
 }
 
-.active{
-    color: white;
+nav ul li a.active, nav ul li a:hover{
+    color: black;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.menu-toggler{
+    display: none;
 }
 /* Main */
 
@@ -99,8 +123,8 @@ img{
 #about-us{
     padding: 60px;
     margin-bottom: 0;
-    background-color: black;
-    color: white;
+  
+    color: black;
 }
 
 #about-row{
@@ -118,7 +142,7 @@ img{
 #about-card{
     width: 300px;
     height: 400px;
-    background-color: white;
+    background-color: black;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -133,7 +157,7 @@ img{
 
 footer{
     margin-top: 0;
-    background-color: orangered;
+    background-color: rgb(233, 112, 68);
     padding: 80px;
 }
 
@@ -143,7 +167,7 @@ footer{
 /* Main */
 
 main{
-    margin-top: 99px;
+    margin-top: 20px;
 }
 
 #images{
@@ -291,35 +315,49 @@ main{
 
 /* Navbar(for all the pages)*/
 
-@media screen and (max-width: 911px){
-    .topnav a:not(:first-child){
+@media screen and (max-width: 1000px){
+    .menu-toggler{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 5px 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+    }
+
+    .menu-toggler:before{
+        content: '\f0c9';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+
+    .menu-toggler.active:before{
+        content: '\f00d';
+        /* font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: inline-block; */
+    }
+
+    nav{
         display: none;
     }
-
-    .topnav a.icon{
-        float: right;
-        display: inline;
-    }
     
+    nav.active{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav.active ul {
+        display: block;
+    }
 }
 
-@media screen and (max-width: 911px){
-    .topnav.responsive {
-        position: relative;
-        display: -webkit-flex;
-        flex-direction: column;
-    }
-    .topnav.responsive .icon{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .topnav.responsive a{
-        float: none;
-        display: inline;
-        text-align: left;
-    }
+@media screen and (max-width: 1000px){
+   
 
     .img-row{
         display: -webkit-flex;
@@ -396,6 +434,9 @@ main{
         display: none;
     }
 }
+
+
+/* Videos.html*/
 
 @media screen and (max-width: 600px){
     #vid-blog div video{

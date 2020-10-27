@@ -1,6 +1,6 @@
 
-
-var navFlex = document.querySelector('#nav-flex')
+var menu_toggler = document.querySelector('.menu-toggler')
+var nav = document.querySelector('nav')
 
 var modalClose = document.querySelector('#modal-close')
 var img01 = document.querySelector('.img01')
@@ -8,17 +8,11 @@ var img01 = document.querySelector('.img01')
 
 // Navigation Bar
 
-navFlex.addEventListener('click', navBar)
 
-function navBar(){
-    if (navFlex.className === "topnav"){
-        navFlex.className += " responsive";
-    } else{
-        navFlex.className = "topnav";
-    }
-
-    console.log(navFlex.className)
-}
+menu_toggler.addEventListener('click', function navBarAdd(){
+    menu_toggler.classList.toggle('active');
+    nav.classList.toggle('active');
+})
 
 
 
@@ -26,10 +20,9 @@ function navBar(){
 // modal image/ \Pop-up Box Images
 
 
-modalClose.addEventListener('click', modalCloseFunction)
-function modalCloseFunction(){
+modalClose.addEventListener('click', function modalCloseFunction(){
     modalClose.style.display = "none"
-}
+})
 
 
 document.querySelectorAll('.modal-img').forEach(modalImg => 
