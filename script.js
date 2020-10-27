@@ -17,7 +17,7 @@ menu_toggler.addEventListener('click', function navBarAdd(){
 
 
 
-// modal image/ \Pop-up Box Images
+// modal image/Pop-up Box Images
 
 
 modalClose.addEventListener('click', function modalCloseFunction(){
@@ -31,19 +31,3 @@ document.querySelectorAll('.modal-img').forEach(modalImg =>
         modalClose.style.display = 'block'
     })
 );
-
-// WILL WORK ON IT LATER
-
-// Lazy Loading
-// const el = document.querySelector('.lozad')
-// const observer = lozad(el);
-// obsevrver.observe();
-
-// lozad('.lozad', {
-//     load: function(el){
-//         el.src = el.dataset.src;
-//         el.onload = function(){
-//             el.classList.add('fade')
-//         }
-//     }
-// }).observe()
