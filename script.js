@@ -31,3 +31,7 @@ document.querySelectorAll('.modal-img').forEach(modalImg =>
         modalClose.style.display = 'block'
     })
 );
+
+
+const player = new Plyr("#player");
+window.player = player;
