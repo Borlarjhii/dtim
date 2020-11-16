@@ -19,7 +19,7 @@ header{
     z-index: 1;
     max-width: 100%;
     padding: 10px;
-    background-color: darkgreen;
+    background-color: #283618;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-bottom: 1px  solid white;
@@ -165,7 +165,7 @@ video{
 
 footer{
     margin-top: 0;
-    background-color: rgb(233, 112, 68);
+    background-color: #B86200;
     padding: 80px;
 }
 
