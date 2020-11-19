@@ -20,17 +20,9 @@ menu_toggler.addEventListener('click', function navBarAdd(){
 // modal image/Pop-up Box Images
 
 
-modalClose.addEventListener('click', function modalCloseFunction(){
-    modalClose.style.display = "none"
-})
 
-
-document.querySelectorAll('.modal-img').forEach(modalImg => 
-    modalImg.addEventListener('click', modalFunction => {
-        img01.src = modalImg.src;
-        modalClose.style.display = 'block'
-    })
-);
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
 
 
 const player = new Plyr("#player");
