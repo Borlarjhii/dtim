@@ -224,7 +224,7 @@ margin-top: 78px;
 
 /* Navbar(for all the pages)*/
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
     .menu-toggler{
         display: block;
         width: 40px;
@@ -265,13 +265,13 @@ margin-top: 78px;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
 
 
     .img-row{
         display: -webkit-flex;
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column;
+        align-items: center; */
     }
     
     .img-cover{
