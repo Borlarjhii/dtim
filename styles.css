@@ -87,16 +87,44 @@ nav ul li a.active, nav ul li a:hover{
     padding: 50px 0 80px 0;
     margin-bottom: 40px;
     background-color: black;
+    display: -webkit-flex;
 }
 
 #index-video{
     display: -webkit-flex;
     justify-content: center;
     padding: 10px;
+    width: 100%;
+}
+
+#landing-page-section{
+    color: white;
+    width: 40%;
+    margin-right: 100px;
+    margin-top: 20px;
 }
 
 video{
     width: 60%;
+}
+
+a.button1{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+}
+a.button1:hover{
+     color: #000000;
+     background-color: #FFFFFF;
 }
 
 
@@ -282,6 +310,17 @@ margin-top: 78px;
 
 
 @media screen and (max-width: 600px){
+    #landing-page-video{
+        display: -webkit-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #landing-page-section{
+        margin: 0 auto;
+        width: 80%;
+    }
+
     video{
         width: 100%;
     }
