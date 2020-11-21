@@ -1,5 +1,5 @@
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Assistant', sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
@@ -163,12 +163,19 @@ a.button1:hover{
     margin-top: 50px;
 }
 
+#about-description h4 a{
+    color: #686868;
+}
+
+#about-description h4 a:hover{
+    color: #0C120C
+}
+
 /* Footer */
 
 footer{
     margin-top: 0;
     background-color: #B86200;
-    padding: 80px;
 }
 
 
@@ -271,9 +278,6 @@ margin-top: 78px;
 
     .menu-toggler.active:before{
         content: '\f00d';
-        /* font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        display: inline-block; */
     }
 
     nav{
@@ -386,7 +390,7 @@ margin-top: 78px;
 
 @media screen and (max-width: 600px){
     #vid-blog div video{
-        width: 90%;
+        width: 300px;
     }
 
     #vid-blog div p{
@@ -394,3 +398,115 @@ margin-top: 78px;
     
     }
 }
+
+
+@media screen and (max-width: 600px){
+    .team-row{
+        display: -webkit-flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .team-card{
+        max-width: 70%;
+        
+    }
+
+    #cc-footer{
+        display: -webkit-flex;
+        flex-direction: column;
+    }
+
+    .second-sec{
+        margin-left: 0 !important; 
+    }
+   
+}
+
+
+
+
+
+/* Content Creators.html */
+
+
+#team-text-content{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+#our-team{
+    display: flex;
+    flex-direction: column;
+}
+
+.team-row{
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+.team-card{
+    transition: box-shadow .3s;
+    width: 370px;
+    height: 370px;
+    background-color: #ECEBF3;
+    margin: 30px;
+}
+
+.team-card:hover{
+    box-shadow: 0 0 11px rgba(134, 130, 130, 0.2);
+}
+
+
+
+
+
+/* footer */
+#cc-footer{
+    padding: 60px;
+    display: -webkit-flex;
+}
+
+.second-sec{
+    margin-left: 40px;
+}
+
+.social-media-icons{
+    display: -webkit-flex;
+    
+}
+
+.circle-icons i{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: -webkit-flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.fa-facebook-f{
+    color: white;
+    background-color: #3b5998;
+}
+.fa-twitter{
+    color:  #00acee;
+    background-color:white;
+}
+
+.fa-instagram{
+    color:  #3f729b;
+    background-color:white;
+}
+
+.fa-linkedin-in{
+    color:  #0e76a8;
+    background-color:white;
+}
+

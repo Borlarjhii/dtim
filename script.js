@@ -2,9 +2,6 @@
 var menu_toggler = document.querySelector('.menu-toggler')
 var nav = document.querySelector('nav')
 
-var modalClose = document.querySelector('#modal-close')
-var img01 = document.querySelector('.img01')
-
 
 // Navigation Bar
 
@@ -17,13 +14,12 @@ menu_toggler.addEventListener('click', function navBarAdd(){
 
 
 
-// modal image/Pop-up Box Images
-
-
-
+// Lozad
 const observer = lozad(); // lazy loads elements with default selector as '.lozad'
 observer.observe();
 
 
+
+// Plyr
 const player = new Plyr("#player");
 window.player = player;
