@@ -555,6 +555,7 @@ a{
 
 #episode-1{
     display: -webkit-flex;
+    margin-bottom: 40px;
 }
 
 .project-episode-1{
