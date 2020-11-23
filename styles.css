@@ -556,6 +556,7 @@ a{
 #episode-1{
     display: -webkit-flex;
     margin-bottom: 40px;
+    justify-content: center;
 }
 
 .project-episode-1{
@@ -563,10 +564,6 @@ a{
     margin: 20px;
 }
 
-#episode-1-text-content{
-margin-left: 25px;
-margin-right: 25px;
-}
 
 #episode-1-text-content h2{
     text-decoration: underline;
@@ -581,4 +578,45 @@ margin-right: 25px;
     .project-episode-1{
         margin: 20px 0 0 0 !important;
     }
+}
+
+
+/**/
+
+#project-header{
+    text-align: center;
+    font-weight: 200;
+}
+
+.first-project{
+    display: -webkit-flex;
+    padding: 30px;
+}
+
+.project-cover{
+    width: 380px;
+    height: 430px;
+}
+
+.project-poster-img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-text{
+    width: 80%;
+    margin: 30px;
+}
+
+.episode-title:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 90%;
+}
+
+.a-project{
+    text-decoration: none;
+    color: black;
 }
