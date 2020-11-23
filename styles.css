@@ -625,7 +625,7 @@ hr{
     .first-project{
         display: -webkit-flex;
         flex-direction: column;
-        padding: 0 !important;
+        padding: 20px 0 !important;
     }
     .project-cover{
     width: 100%;
