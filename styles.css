@@ -5,6 +5,9 @@ body{
     background-color: white;
 }
 
+html{
+    width: 100%;
+}
 
 
 /* index.html */
