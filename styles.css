@@ -178,6 +178,16 @@ video{
     width: 60%;
 }
 
+
+.learn-more{
+    color: white;
+    text-decoration: underline;
+}
+
+.learn-more:hover{
+    font-weight: bold;
+}
+
 /* Landing page Section Buttons */
 
 a.button1{
@@ -218,6 +228,10 @@ a.button1:hover{
     width: 30%;
     text-align: center;
     margin-top: 70px;
+}
+
+#about-us h3{
+    text-decoration: underline;
 }
 
 
