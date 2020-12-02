@@ -239,7 +239,7 @@ a.button1:hover{
 
 
 #about-card{
-    width: 300px;
+    width: 400px;
     height: 400px;
     margin-left: 20px;
     margin-right: 20px;
@@ -928,7 +928,7 @@ margin-top: 78px;
 .about-section-1-img-wrapper{
     width: 38%;
     height: 400px;
-    background-color: turquoise;
+    background-color: tomato;
 }
 
 .about-section-1-text-content{
