@@ -181,6 +181,10 @@ video{
     width: 60%;
 }
 
+.jp-link{
+    color: white;
+    text-decoration: underline;
+}
 
 .learn-more{
     color: white;
