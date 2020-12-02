@@ -947,6 +947,15 @@ margin-top: 78px;
 .about-section-2-img-wrapper{
     width: 38%;
     height: 400px;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-2-img-wrapper h1{
+    font-size: 50px;
+    text-align: center;
 }
 
 .about-section-2-img-wrapper img{
