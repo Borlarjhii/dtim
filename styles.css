@@ -95,7 +95,7 @@ footer{
 /*I DONT REMEMBER WHY THIS IS HERE, BUT IT WORKS*/
 
 #cc-footer{
-    padding: 60px;
+    padding: 60px 0 60px 30px;
     display: -webkit-flex;
 }
 
@@ -932,7 +932,11 @@ margin-top: 78px;
 .about-section-1-img-wrapper{
     width: 38%;
     height: 400px;
-    background-color: tomato;
+}
+
+.about-section-1-img-wrapper img{
+    width: 100%;
+    height: 100%;
 }
 
 .about-section-1-text-content{
@@ -1069,7 +1073,7 @@ margin-top: 78px;
     }
 
     .about-section-1-img-wrapper{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 
