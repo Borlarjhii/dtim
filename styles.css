@@ -92,7 +92,6 @@ footer{
     background-color: #B86200;
 }
 
-/*I DONT REMEMBER WHY THIS IS HERE, BUT IT WORKS*/
 
 #cc-footer{
     padding: 60px 0 60px 30px;
@@ -1073,12 +1072,12 @@ margin-top: 78px;
     }
 
     .about-section-1-img-wrapper{
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
     }
 
     .about-section-1-text-content{
-        width: 80%;
+        width: 70%;
     }
 
     #about-section-2{
