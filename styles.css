@@ -988,24 +988,7 @@ margin-top: 78px;
     margin-right: 20px;
 }
 
-#about-section-3{
-    display: -webkit-flex;
-    justify-content: center;
-    margin-top: 26px;
-}
 
-.about-section-3-video{
-    width: 35%;
-    height: 280px;
-    background-color: tomato;
-    margin-top: 56px;
-}
-
-.about-section-3-text-content{
-    width: 50%;
-    padding: 30px;
-    margin-left: 20px;
-}
 
 #about-section-4, #about-section-5{
     background-color: #f2f0eb;
@@ -1081,6 +1064,7 @@ margin-top: 78px;
 
     .about-section-1-img-wrapper{
         width: 90%;
+        height: 50%;
         margin: 0 auto;
     }
 
@@ -1100,14 +1084,6 @@ margin-top: 78px;
         width: 80%;
     }
 
-    .about-section-3-video{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .about-section-3-text-content{
-        width: 80%;
-    }
 
     .about-section-4-text-content-header h3{
         font-size: 35px;
